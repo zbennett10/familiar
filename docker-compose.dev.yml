@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  cassandra:
+    image: cassandra:3.11.10
+    ports:
+      - "9042:9042"
+    volumes:
+      - /System/Volumes/Data/cassandra/data:/bitnami
+
+  cassandra-load-keyspace:
+      container_name: cassandra-load-keyspace
+      image: cassandra:latest
+      depends_on:
+        - cassandra
+      volumes:
+        - ./cql/familiar-init.cql:/schema.cql 
+      command: /bin/bash -c "sleep 25 && echo loading cassandra keyspace && cqlsh cassandra -f /schema.cql"

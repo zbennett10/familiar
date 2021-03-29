@@ -1,0 +1,3 @@
+5E API => https://www.dnd5eapi.co/graphql
+
+Obsidian Portal (campaign wiki and logger)=> https://help.obsidianportal.com/article/82-api-overview

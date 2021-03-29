@@ -1,0 +1,25 @@
+{
+ "name": "dungeon-comrade",
+ "description": "Enter your project description",
+ "author": {
+  "name": "Zachary Bennett",
+  "email": "bennett.zachary@outlook.com"
+ },
+ "version": "0.1.0",
+ "binaryname": "dungeon-comrade",
+ "frontend": {
+  "dir": "frontend",
+  "install": "npm install",
+  "build": "npx ng build --single-bundle true --output-hashing none --prod --bundle-styles false",
+  "bridge": "src",
+  "serve": "npx ng serve --poll=2000"
+ },
+ "tags": "",
+ "WailsVersion": "",
+ "CrossCompile": false,
+ "Platform": "",
+ "Architecture": "",
+ "LdFlags": "",
+ "GoPath": "",
+ "UseFirebug": false
+}

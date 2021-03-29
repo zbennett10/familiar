@@ -1,0 +1,9 @@
+<ng-select
+    [items]="equipmentCategories$ | async"
+    bindLabel="name"
+    [(ngModel)]="selectedCategory"></ng-select>
+
+<ng-select
+    [items]="equipmentResources$ | async"
+    bindLabel="name"
+    [(ngModel)]="selectedResource"></ng-select>
